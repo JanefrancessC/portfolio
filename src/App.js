@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Media from "./components/Media";
 import About from "./components/About";
+import Projects from "./components/Projects";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <NavBar />
       <Home />
       <About />
+      <Projects />
 
       <Media />
     </div>
