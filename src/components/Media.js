@@ -31,7 +31,7 @@ const Media = () => {
           Email <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:janefrancess@gmail.com",
+      href: "mailto:janefrancesschioma@gmail.com",
     },
     {
       id: 4,
@@ -52,7 +52,7 @@ const Media = () => {
           <li
             key={id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500" +
+              "flex justify-between items-center w-40 h-14 px-4 ml-[-75px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500" +
               " " +
               style
             }
