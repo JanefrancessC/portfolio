@@ -1,21 +1,30 @@
 import React from "react";
+import "./projects.css";
 import deskeando from "../assets/images/deskeando.png";
 import feedback from "../assets/images/feedback-tracker.png";
-import coffeeShop from "../assets/images/coffeeShop.mov";
+import coffeeStore from "../assets/images/coffeeStore2.png"
+// import coffeeVideo from "../assets/videos/coffeeVideo.mp4"
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
       src: deskeando,
+      demoLink: "https://deskeando.onrender.com/",
+      gitHubLink: "https://github.com/JanefrancessC/deskeando",
     },
     {
       id: 2,
       src: feedback,
+      demoLink: "https://cyf-feedback-tracker.onrender.com/",
+      gitHubLink:
+        "https://github.com/JanefrancessC/wm4-1-techieelites-feedbacktracker",
     },
     {
       id: 3,
-      src: coffeeShop,
+      src: coffeeStore,
+      demoLink: "",
+      gitHubLink: "https://github.com/JanefrancessC/coffeeShop",
     },
   ];
   return (
@@ -25,30 +34,47 @@ const Projects = () => {
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          <p className="text-4xl font-bold inline">
             Projects
           </p>
           <p className="py-6">Check out my projects</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-8 sm:px-0">
-          {projects.map(({ id, src }) => (
-             <div key={id} className="shadow-md shadow-gray-800 rounded-lg">
-               <img
-                 src={src}
-                 alt=""
-                 className="rounded-md duration-200 hover:scale-105"
-               />
-               <div className="flex items-center justify-center">
-                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                   Demo
-                 </button>
-                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                   GitHub
-                 </button>
-               </div>
-             </div>
+          {projects.map(({ id, src, demoLink, gitHubLink }) => (
+            <div key={id} className="shadow-md shadow-gray-800 rounded-lg">
+              {typeof src === "string" ? (
+                <img
+                  src={src}
+                  alt=""
+                  className="rounded-md duration-200 hover:scale-105 project-image"
+                />
+              ) : (
+                <video
+                  src={src}
+                  controls
+                  className="rounded-md duration-200 hover:scale-105 project-video"
+                />
+              )}
+              <div className="flex items-center justify-center">
+                <a
+                  href={demoLink}
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Demo
+                </a>
+                <a
+                  href={gitHubLink}
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
           ))}
-         
         </div>
       </div>
     </div>

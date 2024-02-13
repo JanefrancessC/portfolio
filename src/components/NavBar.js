@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -16,19 +17,16 @@ const NavBar = () => {
       id: 3,
       link: "projects",
     },
+
     {
       id: 4,
-      link: "experience",
-    },
-    {
-      id: 5,
       link: "contact",
     },
   ];
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 bg-gradient-to-r from-[#0b1a0baa] to-[#5d775d04] shadow-lg shadow-yellow-800/50 bg-black fixed">
+    <div className="flex justify-between items-center w-full h-20 px-4 shadow-lg shadow-yellow-800/50 bg-black fixed">
       <div>
-        <h1 className="text-5xl font-bold font-sign ml-2 text-yellow-600">
+        <h1 className="text-4xl font-bold font-sign ml-2 text-yellow-600">
           Jane
         </h1>
       </div>
@@ -37,9 +35,11 @@ const NavBar = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-lg text-gray-500 hover:scale-105 duration-200"
+            className="px-4 cursor-pointer capitalize text-center font-medium text-lg text-gray-500 hover:text-yellow-500 hover:scale-105 duration-200"
           >
-            {link}
+            <Link to={link} smooth duration={500}>
+              {link}
+            </Link>
           </li>
         ))}
       </ul>
@@ -58,7 +58,14 @@ const NavBar = () => {
               key={id}
               className="px-4 cursor-pointer capitalize py-6 text-4xl"
             >
-              {link}
+              <Link
+                to={link}
+                smooth
+                duration={500}
+                onClick={() => setNav(!nav)}
+              >
+                {link}
+              </Link>
             </li>
           ))}
         </ul>
