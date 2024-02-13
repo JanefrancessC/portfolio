@@ -1,29 +1,28 @@
-import React, { useRef } from "react";
+import React from "react";
 
 const Contact = () => {
-    const formRef = useRef(null)
+    // const formRef = useRef()
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
+    // const handleSubmit = (e) => {
+    //     e.preventDefault()
         
-        formRef.current.reset()
-    }
+    //     formRef.current.reset()
+    // ref = { formRef };
+    // onSubmit = { handleSubmit };
+    // }
 
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white"
+      className="w-full h-screen bg-gradient-to-b from-black via-black to-gray-800 text-white"
     >
       <div className="flex flex-col justify-center p-4 max-w-screen-lg mx-auto h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline ">
-            Contact Me
-          </p>
+        <div className="pb-10">
+          <p className="text-4xl font-bold inline ">Contact Me</p>
         </div>
         <div className="flex justify-center items-center">
           <form
-            ref={formRef}
-            onSubmit={handleSubmit}
+            
             action="https://getform.io/f/222ccb7b-5e44-406a-a473-4e34607d4d44"
             method="POST"
             className="flex flex-col w-full md:w-1/2"
