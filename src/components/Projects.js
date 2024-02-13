@@ -22,7 +22,7 @@ const Projects = () => {
     {
       id: 3,
       src: coffeeStore,
-      demoLink: "",
+      demoLink: "https://vimeo.com/912692202?share=copy",
       gitHubLink: "https://github.com/JanefrancessC/coffeeShop",
     },
   ];
@@ -45,16 +45,17 @@ const Projects = () => {
                   className="rounded-md duration-200 hover:scale-105 project-image"
                 />
               ) : (
-                <video
-                  src={src}
-                  controls
-                  className="rounded-md duration-200 hover:scale-105 project-video"
-                />
+                <iframe src={src} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="coffeeVideo"></iframe>
+                // <video
+                //   src={src}
+                //   controls
+                //   className="rounded-md duration-200 hover:scale-105 project-video"
+                // />
               )}
               <div className="flex items-center justify-center">
                 <a
                   href={demoLink}
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:text-yellow-500"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -62,7 +63,7 @@ const Projects = () => {
                 </a>
                 <a
                   href={gitHubLink}
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:text-yellow-500"
                   target="_blank"
                   rel="noreferrer"
                 >
