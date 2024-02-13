@@ -27,9 +27,9 @@ const Home = () => {
           <h2 className="text-2xl sm:text-7xl font-bold text-yellow-500">
             Full Stack Developer
           </h2>
-          <p className="text-xl text-gray-500 py-4 w-full">
+          <p className="text-xl text-gray-500 py-4 w-full text-justify">
             Hi, I am Chioma Okeke. Computer science graduate with a major in
-            Cybersecurity, and a software Developer Adept at API development,
+            Cybersecurity, and a software developer. Adept at API development,
             unit testing, and collaborating in a scaling-up environment
           </p>
 

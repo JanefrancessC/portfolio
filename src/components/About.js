@@ -11,7 +11,7 @@ const About = () => {
           <p className="text-4xl font-bold inline">Education</p>
         </div>
 
-        <p className="text-xl">
+        <p className="text-xl text-justify">
           Computer science graduate with a major in Cybersecurity, and a
           software Developer Adept at API development, unit testing, and
           collaborating in a scaling-up environment
