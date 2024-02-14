@@ -30,7 +30,7 @@ const Projects = () => {
       src: coffeeStore,
       demoLink: "https://player.vimeo.com/video/912692202?h=099ba87236",
       gitHubLink: "https://github.com/JanefrancessC/coffeeShop",
-      title: "Coffee Shop Invoice",
+      title: "Cafe Shop",
       description: "Python console application that allows clients to manage their orders, put in a delivery address and then writes and reads the receipt to a .txt file.",
     },
   ];
