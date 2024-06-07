@@ -9,7 +9,8 @@ const Projects = () => {
     {
       id: 1,
       src: deskeando,
-      demoLink: "https://deskeando.onrender.com/",
+      // demoLink: "https://deskeando.onrender.com/",
+      demoLink: "https://vimeo.com/954712221?share=copy",
       gitHubLink: "https://github.com/JanefrancessC/deskeando",
       title: "Deskeando",
       description:
@@ -31,7 +32,8 @@ const Projects = () => {
       demoLink: "https://player.vimeo.com/video/912692202?h=099ba87236",
       gitHubLink: "https://github.com/JanefrancessC/coffeeShop",
       title: "Cafe Shop",
-      description: "Python console application that allows clients to manage their orders, put in a delivery address and then writes and reads the receipt to a .txt file.",
+      description:
+        "Python console application that allows clients to manage their orders, put in a delivery address and then writes and reads the receipt to a .txt file.",
     },
   ];
   return (
@@ -68,7 +70,9 @@ const Projects = () => {
                   <p className="text-2xl text-center font-bold text-gray-300">
                     {title}
                   </p>
-                  <p className="pt-4 text-justify text-gray-500">{description}</p>
+                  <p className="pt-4 text-justify text-gray-500">
+                    {description}
+                  </p>
                 </div>
                 <div className="flex items-center justify-center">
                   <a
