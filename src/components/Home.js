@@ -2,12 +2,6 @@ import React from "react";
 import hero from "../assets/images/hero.jpeg";
 import SkillList from "./Skill";
 
-const Tag = ({ children }) => (
-  <span className="inline-block bg-black-500 text-white rounded-full mx-auto px-3 py-1 text-sm font-semibold m-1">
-    {children}
-  </span>
-);
-
 const Home = () => {
   return (
     <div
@@ -36,22 +30,10 @@ const Home = () => {
             just listen to Physicist explain their research. I am also
             interested in Modelling as different people have told me to consider
             it as a career.
-            {/* Hi, I am Chioma Okeke. Computer science graduate with a major in
-            Cybersecurity, and a software developer. Adept at API development,
-            unit testing, and collaborating in a scaling-up environment */}
           </p>
 
           <div className="flex flex-wrap justify-center">
             <SkillList />
-            {/* <p className="text-2xl text-white">Skills:</p>
-            <Tag>CSS</Tag>
-            <Tag>JavaScript</Tag>
-            <Tag>React</Tag>
-            <Tag>Node.js</Tag>
-            <Tag>Express.js</Tag>
-            <Tag>Python</Tag>
-            <Tag>PostgreSQL</Tag>
-            <Tag>MongoDB</Tag> */}
           </div>
         </div>
       </div>
