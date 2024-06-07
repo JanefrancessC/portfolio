@@ -12,9 +12,13 @@ const About = () => {
         </div>
 
         <p className="text-xl text-justify">
-          Computer science graduate with a major in Cybersecurity, and a
-          software Developer Adept at API development, unit testing, and
-          collaborating in a scaling-up environment
+          Full-stack web developer adept at API development, unit testing, and
+          collaborating in a scaling-up environment and a Cybersecurity
+          enthusiast. Interested in anything Software Engineering and
+          information security. I like to play puzzles and discuss science, or
+          just listen to Physicist explain their research. I am also interested
+          in Modelling as different people have told me to consider it as a
+          career.
         </p>
       </div>
     </div>

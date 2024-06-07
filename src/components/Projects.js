@@ -14,7 +14,7 @@ const Projects = () => {
       gitHubLink: "https://github.com/JanefrancessC/deskeando",
       title: "Deskeando",
       description:
-        "An application to manage desk booking and spaces, a way to book desks in advance so everyone can be sure they have space to work ",
+        "A hot desking application to manage desk booking and spaces, a way to book desks in advance so everyone can be sure they have space to work ",
     },
     {
       id: 2,
