@@ -19,7 +19,7 @@ const Projects = () => {
     {
       id: 2,
       src: feedback,
-      demoLink: "https://cyf-feedback-tracker.onrender.com/",
+      demoLink: "https://vimeo.com/1072508941?share=copy",
       gitHubLink:
         "https://github.com/JanefrancessC/wm4-1-techieelites-feedbacktracker",
       title: "Feedback Tracker",
